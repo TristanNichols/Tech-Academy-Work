@@ -1,0 +1,10 @@
+--SC1
+use dbMovie
+delete tblMovie
+where m_Rating = 'G'
+select * from tblMovie
+
+--SC2
+use JProCo
+delete MgmtTraining
+where ClassDurationHours > 20
