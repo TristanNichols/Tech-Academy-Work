@@ -1,0 +1,10 @@
+use dbMovie
+go
+
+alter table Movie
+add m_Release varchar (100) not null
+default '2000'
+go
+
+select * from Movie
+go
