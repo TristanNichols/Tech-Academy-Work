@@ -1,0 +1,9 @@
+USE [JProCo]
+GO
+
+create procedure GetOvernightproducts
+as
+	select *
+	from currentproducts
+	where category= 'Overnight-Stay'
+GO
