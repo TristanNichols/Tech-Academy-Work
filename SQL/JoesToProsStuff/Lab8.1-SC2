@@ -1,0 +1,22 @@
+use JProCo
+go
+
+create procedure GetMediumProducts
+as
+	select *
+	from CurrentProducts
+	where Category = 'Medium-Stay'
+go
+
+create procedure GetLongTermProducts
+as
+	select *
+	from CurrentProducts
+	where Category = 'LongTerm-Stay'
+go
+
+exec GetMediumProducts
+go
+
+exec GetLongTermProducts
+go
