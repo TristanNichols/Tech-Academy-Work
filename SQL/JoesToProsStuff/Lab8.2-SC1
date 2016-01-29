@@ -1,0 +1,12 @@
+use JProCo
+go
+
+declare @MinGrant int
+set @MinGrant = 20000
+declare @MaxGrant int
+set @MaxGrant = 40000
+
+select *
+from [Grant] 
+where  Amount between @MinGrant and @MaxGrant
+go
