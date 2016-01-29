@@ -1,0 +1,12 @@
+use JProCo
+go
+
+create proc GetProductListByCategory @Category varchar(50)
+as
+	select productid,productname,retailprice
+	from CurrentProducts
+	where CurrentProducts.Category = @Category
+go
+
+exec GetProductListByCategory 'No-Stay'
+go
