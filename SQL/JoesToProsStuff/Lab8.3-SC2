@@ -1,0 +1,13 @@
+use JProCo
+go
+
+create proc GetGrantsByEmployee @LastName varchar(50)
+as
+	select g.GrantName,g.Amount,g.EmpID,e.FirstName,e.LastName
+	from [Grant] G inner join Employee E
+	on g.empid = e.empid
+	where e.lastname = @LastName
+go
+
+exec GetGrantsByEmployee 'Lonning'
+go
