@@ -1,0 +1,18 @@
+use JProCo
+go
+
+begin tran
+	
+	delete [Grant]
+	where GrantID = 004
+go
+	
+	insert into [Grant]
+	values ('011','Seasons Outreach',NULL,85000)
+	
+go
+
+commit tran
+
+select * from [Grant]
+go
