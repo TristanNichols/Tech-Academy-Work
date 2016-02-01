@@ -1,0 +1,21 @@
+use master
+go
+
+create login Bruce with password = 'ABC$$123'
+go
+
+grant control server to Bruce
+go
+
+deny alter any database to Bruce
+go
+
+--Open query as Bruce
+
+use master
+go
+
+create database dbBruce
+go
+
+--Create database dbBruce was meant to fail
