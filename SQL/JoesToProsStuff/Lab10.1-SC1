@@ -1,0 +1,5 @@
+use master
+go
+
+create login Sara with password = 'ABC$$123'
+go
