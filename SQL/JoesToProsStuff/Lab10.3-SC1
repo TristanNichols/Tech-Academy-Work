@@ -1,0 +1,16 @@
+use master
+go
+
+create login Alan with password = 'ABC$$123'
+go
+
+grant control server to Alan
+go
+
+--Open query as Alan
+
+use master
+go
+
+create database dbAlan
+go
