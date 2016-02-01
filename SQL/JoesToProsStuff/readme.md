@@ -1,1 +1,1 @@
-All work here was done through the JoesToPros program, and not my creations.
+All work here was done by me through the JoesToPros program, and not my original creations.
