@@ -1,0 +1,21 @@
+use JProCo
+go
+
+begin tran
+
+update [Grant]
+set Amount = 1.00
+
+waitfor delay '00:03:00'
+
+rollback tran
+go
+
+--In a new query window
+
+use JProCo
+go
+
+select *
+from [Grant] (nolock)
+go
