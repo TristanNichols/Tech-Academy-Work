@@ -1,0 +1,14 @@
+use master
+go
+
+grant control server to Sara
+go
+
+--Open new query as Sara
+
+use JProCo
+go
+
+select *
+from Location
+go
