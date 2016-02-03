@@ -1,0 +1,13 @@
+use master
+go
+
+create proc CustomBetaProcMark1 (@Test1 varchar(30), @Test2 varchar(30))
+as
+select * 
+from [Grant] g inner join PayRates p
+on g.EmpID = p.EmpID
+where  GrantID = @Test1 and HourlyRate = @Test2
+select *
+from Customer c inner join Employee e
+on c.FirstName = e.firstname
+go
