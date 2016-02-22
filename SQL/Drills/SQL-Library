@@ -1,0 +1,281 @@
+create database Library_Management
+go
+
+use Library_Management
+go
+
+create table Book_Copies
+(
+BookID int null,
+BranchID int null,
+No_Of_Copies varchar(30) null
+)
+go
+
+create table Book_Loans
+(
+BookID int null,
+BranchID int null,
+CardNo int null,
+DateOut varchar(50) null,
+DueDate varchar(50) not null
+)
+go
+
+create table Book
+(
+BookID int primary key not null,
+Title varchar(250) null,
+PublisherName varchar(50) null
+)
+go
+
+create table Library_Branch
+(
+BranchID int primary key not null,
+BranchName varchar(250) null,
+Address varchar(250) null
+)
+go
+
+create table Publisher
+(
+Name varchar(250) null,
+Address varchar(250) null,
+Phone int null
+)
+go
+
+create table Book_Authors
+(
+BookID int null,
+AuthorName varchar(250) null
+)
+go
+
+create table Borrower
+(
+CardNo int primary key not null,
+Name varchar(250) null,
+Address varchar(250) null,
+Phone bigint null
+)
+go
+
+
+use Library_Management
+go
+
+insert into Book
+values (1,'The Lost Tribe','Stephen King'),
+(2,'Pizza Addictions','John Singer'),
+(3,'Tumblers Today','Todd Howard'),
+(4,'Roller Coaster DIY','Dr.Suess'),
+(5,'The Candy Man Can','Dwane Johnson'),
+(6,'Raging Rapids','Sam F. Kennedy'),
+(7,'Why Samsung is Better than Apple','Stephen Hawking'),
+(8,'The Origin of the Taco','Joe Yamma'),
+(9,'Mr.Milkshake','Ian & Anthony'),
+(10,'The Dead Sea Scrolls','God'),
+(11,'9.9 out of 10','IGN'),
+(12,'26 Ways to Drink Water, You Wont Believe Number 7','Original Scammers INC'),
+(13,'Fallout','Bethesda'),
+(14,'The Life of Coby Jordan','Tha NFL'),
+(15,'Pokekmon Emerald','GBA'),
+(16,'How to Train your Train','The Conductor'),
+(17,'Why We Need to Impeach Obama NOW','Every Tabloid Ever'),
+(18,'Cart Pushers Anonymous','John Franko'),
+(19,'My Expendible Oddish','Ask Ketchup'),
+(20,'METAPOD, USE HARDEN','Every Single Bug Trainer, Amirite?')
+go
+
+
+use Library_Management
+go
+
+insert into Book_Authors
+values (10,'God'),
+(11,'IGN'),
+(15,'GBA'),
+(16,'The Conductor'),
+(13,'Bethesda'),
+(5,'Dwane Johnson'),
+(8,'Joe Yamma'),
+(3,'Todd Howard'),
+(19,'Ask Ketchup'),
+(9,'Ian & Anthony')
+go
+
+use Library_Management
+go
+
+insert into Library_Branch
+values (1,'Sharpstown','123 Easy Street'),
+(2,'Central','321 Thomas Cir'),
+(3,'Locke','543 Five Dr'),
+(4,'Rice','195 High Five Dr')
+go
+
+use Library_Management
+go
+
+insert into Book_Copies
+values (1,1,2),
+(2,1,2),
+(3,1,2),
+(4,1,2),
+(5,1,2),
+(6,1,2),
+(7,1,2),
+(8,1,2),
+(9,1,2),
+(10,1,2),
+(11,2,2),
+(12,2,2),
+(13,2,2),
+(14,2,2),
+(15,2,2),
+(16,2,2),
+(17,2,2),
+(18,2,2),
+(19,2,2),
+(20,2,2),
+(1,3,2),
+(2,3,2),
+(3,3,2),
+(4,3,2),
+(5,3,2),
+(6,3,2),
+(7,3,2),
+(8,3,2),
+(9,3,2),
+(10,3,2),
+(11,4,2),
+(12,4,2),
+(13,4,2),
+(14,4,2),
+(15,4,2),
+(16,4,2),
+(17,4,2),
+(18,4,2),
+(19,4,2),
+(20,4,2)
+go
+
+use Library_Management
+go
+
+insert into Borrower
+values (1,'Brian','675 Bellmont Dr',5414697370),
+(2,'Alex','123 Buy Cir',541123450),
+(3,'Li','432 Cyan Lane',541123451),
+(4,'Elise','665 Cena Dr',541123452),
+(5,'Zack','878 Yoshi St',541123453),
+(6,'Lonny','909 Mayro Lane',541123454),
+(7,'Bob','102 East St',541123455),
+(8,'Rob','404 File Not Found Dr',541123456)
+go
+
+use Library_Management
+go
+
+insert into Book_Loans
+values (1,1,1,'January 5th 2015','February 5th 2015'),
+(2,1,1,'January 5th 2015','February 5th 2015'),
+(3,1,1,'January 5th 2015','February 5th 2015'),
+(4,1,1,'January 5th 2015','February 5th 2015'),
+(5,1,1,'January 5th 2015','February 5th 2015'),
+(6,1,1,'January 5th 2015','February 5th 2015'),
+(7,1,2,'January 5th 2015','February 5th 2015'),
+(8,1,2,'January 5th 2015','February 5th 2015'),
+(9,1,2,'January 5th 2015','February 5th 2015'),
+(10,1,2,'January 5th 2015','February 5th 2015'),
+(11,1,2,'January 5th 2015','February 5th 2015'),
+(12,1,2,'January 5th 2015','February 5th 2015'),
+(13,1,3,'January 5th 2015','February 5th 2015'),
+(14,1,3,'January 5th 2015','February 5th 2015'),
+(15,1,3,'January 5th 2015','February 5th 2015'),
+(16,1,3,'January 5th 2015','February 5th 2015'),
+(17,1,3,'January 5th 2015','February 5th 2015'),
+(18,1,3,'January 5th 2015','February 5th 2015'),
+(19,1,3,'January 5th 2015','February 5th 2015'),
+(20,1,3,'January 5th 2015','February 5th 2015'),
+(1,1,3,'January 5th 2015','February 5th 2015'),
+(2,1,3,'January 5th 2015','February 5th 2015'),
+(3,1,4,'January 5th 2015','February 5th 2015'),
+(4,1,4,'January 5th 2015','February 5th 2015'),
+(5,1,4,'January 5th 2015','February 5th 2015'),
+(6,1,4,'January 5th 2015','February 5th 2015'),
+(7,1,4,'January 5th 2015','February 5th 2015'),
+(8,1,4,'January 5th 2015','February 5th 2015'),
+(9,1,4,'January 5th 2015','February 5th 2015'),
+(10,1,4,'January 5th 2015','February 5th 2015'),
+(11,1,4,'January 5th 2015','February 5th 2015'),
+(12,1,4,'January 5th 2015','February 5th 2015'),
+(13,1,4,'January 5th 2015','February 5th 2015'),
+(14,1,4,'January 5th 2015','February 5th 2015'),
+(15,1,5,'January 5th 2015','February 5th 2015'),
+(16,1,5,'January 5th 2015','February 5th 2015'),
+(17,1,5,'January 5th 2015','February 5th 2015'),
+(18,1,6,'January 5th 2015','February 5th 2015'),
+(19,1,6,'January 5th 2015','February 5th 2015'),
+(20,1,6,'January 5th 2015','February 5th 2015'),
+(1,2,6,'January 5th 2015','February 5th 2015'),
+(2,2,6,'January 5th 2015','February 5th 2015'),
+(3,2,6,'January 5th 2015','February 5th 2015'),
+(4,2,6,'January 5th 2015','February 5th 2015'),
+(5,2,7,'January 5th 2015','February 5th 2015'),
+(6,2,7,'January 5th 2015','February 5th 2015'),
+(1,3,7,'January 5th 2015','February 5th 2015'),
+(2,3,8,'January 5th 2015','February 5th 2015'),
+(3,3,8,'January 5th 2015','February 5th 2015'),
+(1,4,8,'January 5th 2015','February 5th 2015')
+go
+
+use Library_Management
+select * from Book_Copies
+where BookID = 1 and BranchID = 1
+go
+
+select * from Book_Copies
+where BookID = 1
+go
+
+select B.Name from Book_Loans BL full outer join Borrower B
+on BL.CardNo = B.CardNo
+where BL.BookID is null
+go
+
+insert into Book_Loans
+values (1,1,8,'January 11th 2016','February 11th 2016')
+go
+
+select Book.Title,B.Name,B.Address
+from Book_Loans BL full outer join Borrower B
+on BL.CardNo = B.CardNo
+full outer join Book
+on Book.BookID = BL.BookID
+where BL.BranchID = 1
+and BL.DueDate = 'February 11th 2016'
+go
+
+select BranchName
+from Library_Branch
+where BranchID = 1
+select count(BranchID) from Book_Loans
+where BranchID = 1
+go
+
+select B.Name,B.Address,count(L.CardNo)
+from Borrower B full outer join Book_Loans L
+on B.CardNo = L.CardNo
+group by L.CardNo,B.Name,B.Address
+having Count(L.CardNo) > 5
+go
+
+select A.AuthorName,B.No_Of_Copies
+from Book_Authors A inner join Book_Copies B
+on A.BookID = B.BookID
+where BranchID = 2
+and A.AuthorName = 'Stephen King'
+go
