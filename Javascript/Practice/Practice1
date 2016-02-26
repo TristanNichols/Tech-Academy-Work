@@ -1,0 +1,28 @@
+var x = 32;
+undefined
+x;
+32
+var whereAmI = "Graz, Austria";
+undefined
+whereAmI;
+"Graz, Austria"
+x = 45;
+45
+x
+45
+whereAmI = 75;
+75
+whereAmI;
+75
+var monster1 = 'Grover', monster2 = 'Cookie Monster', monster3 = 'Animal';
+undefined
+monster1
+"Grover"
+monster2
+"Cookie Monster"
+monster3
+"Animal"
+var presidentOfUSA = 'Obama';
+undefined
+presidentOfUSA
+"Obama"
