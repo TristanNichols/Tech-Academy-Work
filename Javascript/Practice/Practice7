@@ -1,0 +1,42 @@
+var animal = {
+'genus' : 'bird',
+'species' : 'raven',
+'callType' : 'squawky',
+'quote' : 'Nevermore',
+'maxOffspring' : 5,
+'noisy' : true,
+'deadly' : false
+}
+undefined
+animal;
+Object {genus: "bird", species: "raven", callType: "squawky", quote: "Nevermore", maxOffspring: 5…}
+var animal2 = animal;
+undefined
+animal2
+Object {genus: "bird", species: "raven", callType: "squawky", quote: "Nevermore", maxOffspring: 5…}
+animal2.genus = 'bear';
+"bear"
+animal2
+Object {genus: "bear", species: "raven", callType: "squawky", quote: "Nevermore", maxOffspring: 5…}
+animal;
+Object {genus: "bear", species: "raven", callType: "squawky", quote: "Nevermore", maxOffspring: 5…}
+var animal2 = {
+'genus' : 'bird',
+'species' : 'raven',
+'callType' : 'squawky',
+'quote' : 'Nevermore',
+'maxOffspring' : 5,
+'noisy' : true,
+'deadly' : false
+}
+undefined
+animal;
+Object {genus: "bear", species: "raven", callType: "squawky", quote: "Nevermore", maxOffspring: 5…}
+animal2;
+Object {genus: "bird", species: "raven", callType: "squawky", quote: "Nevermore", maxOffspring: 5…}
+animal2.genus = 'bear'
+"bear"
+animal2;
+Object {genus: "bear", species: "raven", callType: "squawky", quote: "Nevermore", maxOffspring: 5…}
+animal
+Object {genus: "bear", species: "raven", callType: "squawky", quote: "Nevermore", maxOffspring: 5…}
