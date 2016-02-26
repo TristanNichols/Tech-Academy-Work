@@ -1,0 +1,27 @@
+var year=2012,month='October',day=31,paganRitual="All Hallows' Evening";
+undefined
+year
+2012
+month
+"October"
+var year = 2012, month = 'October', day = 31, paganRitual = "All Hallows' Evening";
+undefined
+year
+2012
+paganRitual
+"All Hallows' Evening"
+var year       =       2012,       month =       'October',       day = 31,     paganRitual =        "All Hallows' Evening";
+undefined
+year
+2012
+var year    = 2012,
+month       = 'October',
+day         = 31,
+paganRitual = "All Hallows' Evening";
+undefined
+year
+2012
+paganRitual
+"All Hallows' Evening"
+day
+31
