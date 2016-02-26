@@ -1,0 +1,36 @@
+var animal = {
+'genus' : 'bird',
+'species' : 'raven',
+'callType' : 'squawky',
+'quote' : 'Nevermore',
+'maxOffspring' : 5,
+'noisy' : true,
+'deadly' : false
+}
+undefined
+animal.quote
+"Nevermore"
+animal."quote"
+VM2760:2 Uncaught SyntaxError: Unexpected string(…)InjectedScript._evaluateOn @ VM141:875InjectedScript._evaluateAndWrap @ VM141:808InjectedScript.evaluate @ VM141:664
+animal["quote"]
+"Nevermore"
+animal.color = "black";
+"black"
+animal;
+Object {genus: "bird", species: "raven", callType: "squawky", quote: "Nevermore", maxOffspring: 5…}
+animal["where it lives"] = "in a tree";
+"in a tree"
+animal.where it lives = "in a tree";
+VM3049:2 Uncaught SyntaxError: Unexpected identifier(…)InjectedScript._evaluateOn @ VM141:875InjectedScript._evaluateAndWrap @ VM141:808InjectedScript.evaluate @ VM141:664
+animal["where it lives"];
+"in a tree"
+delete animal.color;
+true
+animal;
+Object {genus: "bird", species: "raven", callType: "squawky", quote: "Nevermore", maxOffspring: 5…}
+var emptyObject = {};
+undefined
+emptyObject.isItReallyEmpty = false;
+false
+emptyObject
+Object {isItReallyEmpty: false}
