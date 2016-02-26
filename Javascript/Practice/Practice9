@@ -1,0 +1,45 @@
+var counties = [
+'Belknap',
+'Strafford',
+'Carroll',
+'Rockingham'
+];
+undefined
+counties[0];
+"Belknap"
+counties[2];
+"Carroll"
+counties[2] = 'Cheshire;
+VM5609:2 Uncaught SyntaxError: Unexpected token ILLEGAL(…)InjectedScript._evaluateOn @ VM4897:875InjectedScript._evaluateAndWrap @ VM4897:808InjectedScript.evaluate @ VM4897:664
+counties[2] = 'Cheshire';
+"Cheshire"
+counties;
+["Belknap", "Strafford", "Cheshire", "Rockingham"]
+counties[4] = 'Carroll';
+"Carroll"
+counties
+["Belknap", "Strafford", "Cheshire", "Rockingham", "Carroll"]
+counties[counties.length] = 'Merrimack';
+"Merrimack"
+counties;
+["Belknap", "Strafford", "Cheshire", "Rockingham", "Carroll", "Merrimack"]
+counties.push("Coos');
+VM5942:2 Uncaught SyntaxError: Unexpected token ILLEGAL(…)InjectedScript._evaluateOn @ VM4897:875InjectedScript._evaluateAndWrap @ VM4897:808InjectedScript.evaluate @ VM4897:664
+counties.push("Coos");
+7
+counties;
+["Belknap", "Strafford", "Cheshire", "Rockingham", "Carroll", "Merrimack", "Coos"]
+counties.pop();
+"Coos"
+counties;
+["Belknap", "Strafford", "Cheshire", "Rockingham", "Carroll", "Merrimack"]
+delete counties[2];
+true
+counties
+["Belknap", "Strafford", undefined × 1, "Rockingham", "Carroll", "Merrimack"]
+counties.splice(2, 1);
+[undefined × 1]
+counties
+["Belknap", "Strafford", "Rockingham", "Carroll", "Merrimack"]
+counties.length;
+5
