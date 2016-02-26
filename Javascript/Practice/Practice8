@@ -1,0 +1,36 @@
+var myArray = [];
+undefined
+myArray;
+[]
+var daysOfTheWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
+undefined
+daysOfTheWeek
+["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+var myArray = [
+0, 1, 2,
+'string1', 'string2', 'string3',
+true, false
+];
+undefined
+myArray
+[0, 1, 2, "string1", "string2", "string3", true, false]
+var counties = [
+'Belknap',
+'Strafford',
+'Carroll',
+'Rockingham'
+];
+undefined
+counties
+["Belknap", "Strafford", "Carroll", "Rockingham"]
+var arrayOfStuff = [
+{'name' : 'value'},
+[1, 2, 3],
+true,
+'nifty'
+];
+undefined
+arrayOfStuff
+[Object, Array[3]0: 11: 22: 3length: 3__proto__: Array[0], true, "nifty"]
+arrayOfStuff.length;
+4
