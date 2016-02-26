@@ -1,0 +1,13 @@
+var year    = 2012,
+month       = 'October', // this is the month
+//day         = 31,
+paganRitual = "All Hallows' Evening";
+undefined
+year
+2012
+month
+"October"
+paganRitual
+"All Hallows' Evening"
+day
+VM7918:2 Uncaught ReferenceError: day is not defined(…)(anonymous function) @ VM7918:2InjectedScript._evaluateOn @ VM7763:875InjectedScript._evaluateAndWrap @ VM7763:808InjectedScript.evaluate @ VM7763:664
