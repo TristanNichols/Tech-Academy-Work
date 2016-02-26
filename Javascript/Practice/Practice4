@@ -1,0 +1,28 @@
+true
+true
+false
+false
+True
+VM1823:2 Uncaught ReferenceError: True is not defined(…)(anonymous function) @ VM1823:2InjectedScript._evaluateOn @ VM141:875InjectedScript._evaluateAndWrap @ VM141:808InjectedScript.evaluate @ VM141:664
+ FALSE
+VM1844:2 Uncaught ReferenceError: FALSE is not defined(…)(anonymous function) @ VM1844:2InjectedScript._evaluateOn @ VM141:875InjectedScript._evaluateAndWrap @ VM141:808InjectedScript.evaluate @ VM141:664
+tRuE
+VM1861:2 Uncaught ReferenceError: tRuE is not defined(…)(anonymous function) @ VM1861:2InjectedScript._evaluateOn @ VM141:875InjectedScript._evaluateAndWrap @ VM141:808InjectedScript.evaluate @ VM141:664
+true
+true
+false
+false
+var myLocation = "Graz", myOtherLocation = "Los Angeles"
+undefined
+myLocation == myOtherLocation
+false
+myLocation === myOtherLocation
+false
+myOtherL
+VM2227:2 Uncaught ReferenceError: myOtherL is not defined(…)(anonymous function) @ VM2227:2InjectedScript._evaluateOn @ VM141:875InjectedScript._evaluateAndWrap @ VM141:808InjectedScript.evaluate @ VM141:664
+myOtherLocation = "Graz"
+"Graz"
+myLocation === myOtherLocation
+true
+myLocation == myOtherLocation
+true
