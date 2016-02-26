@@ -1,0 +1,28 @@
+"This is a string"
+"This is a string"
+"12"
+"12"
+12
+12
+'This is also a string'
+"This is also a string"
+'This is a string"
+VM1264:2 Uncaught SyntaxError: Unexpected token ILLEGAL(…)InjectedScript._evaluateOn @ VM141:875InjectedScript._evaluateAndWrap @ VM141:808InjectedScript.evaluate @ VM141:664
+'<a href="">'
+"<a href="">"
+"This is Joe's /"favorite/" string"
+VM1282:2 Uncaught SyntaxError: Unexpected identifier(…)InjectedScript._evaluateOn @ VM141:875InjectedScript._evaluateAndWrap @ VM141:808InjectedScript.evaluate @ VM141:664
+"This is Joe's \"favorite\" string"
+"This is Joe's "favorite" string"
+"This is Joe's "favorite" string"
+VM1284:2 Uncaught SyntaxError: Unexpected identifier(…)InjectedScript._evaluateOn @ VM141:875InjectedScript._evaluateAndWrap @ VM141:808InjectedScript.evaluate @ VM141:664
+var myString = "This is my string. Leave it alone.";
+undefined
+myString
+"This is my string. Leave it alone."
+myString.length;
+34
+myString.toUpperCase();
+"THIS IS MY STRING. LEAVE IT ALONE."
+"This is my string".length;
+17
