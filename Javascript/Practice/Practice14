@@ -1,0 +1,44 @@
+2 + 5
+7
+4 - 3
+1
+5 - 9
+-4
+3 * 5
+15
+36 / 6
+6
+36 / 5
+7.2
+20 % 2
+0
+19 % 2
+1
+var counter = 0;
+undefined
+counter = counter + 1;
+1
+counter;
+1
+counter += 1;
+2
+counter++;
+2
+counter += 5;
+8
+counter += -4;
+4
+counter -= 1;
+3
+counter--;
+3
+counter
+2
+counter *= 2;
+4
+"cat" + "dog";
+"catdog"
+"cat " + "dog";
+"cat dog"
+"cat" + " and " + "dog";
+"cat and dog"
