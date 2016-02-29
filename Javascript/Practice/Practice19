@@ -1,0 +1,43 @@
+var thing = 12;
+undefined
+thing = "twelve";
+
+"twelve"
+typeof thing;
+"string"
+thing = 12;
+12
+typeof thing;
+"number"
+thing = false;
+false
+typeof thing;
+"boolean"
+thing = {};
+Object {}
+typeof thing;
+"object"
+thing = [];
+[]
+typeof thing;
+"object"
+typeof thing === "object" && thing.hasOwnProperty("length");
+true
+thing = {};
+Object {}
+typeof thing === "object" && thing.hasOwnProperty("length");
+false
+NaN
+NaN
+typeof NaN
+"number"
+typeof null
+"object"
+thing
+Object {}
+thing = null
+null
+thing
+null
+thing === null
+true
