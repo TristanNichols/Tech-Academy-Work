@@ -1,0 +1,53 @@
+var cupid = "Eros";
+// cupid = "Some Other Guy";
+
+if (cupid === "Eros") console.log("Another addition to America's pagan hollidays");
+VM4318:5 Another addition to America's pagan hollidays
+undefined
+var cupid = "Eros";
+cupid = "Some Other Guy";
+
+if (cupid === "Eros") console.log("Another addition to America's pagan hollidays");
+undefined
+var animal = "cat";
+// animal = "dog";
+
+animal === "cat" ? console.log("You will be a cat herder") : console.log("You will be a dog catcher");
+VM5488:5 You will be a cat herder
+undefined
+var animal = "cat";
+animal = "yak";
+
+animal === "cat" ? console.log("You will be a cat herder") : console.log("You will be a dog catcher");
+VM5489:5 You will be a dog catcher
+undefined
+var animal = "cat";
+// animal = "dog";
+
+animal === "cat" ? console.log("You will be a cat herder") : console.log("You will be a dog catcher");
+
+var job = (animal === "cat" ? "cat herder" : "dog catcher");
+VM5706:5 You will be a cat herder
+undefined
+job
+"cat herder"
+var animal = "cat";
+animal = "dog";
+
+animal === "cat" ? console.log("You will be a cat herder") : console.log("You will be a dog catcher");
+
+var job = (animal === "cat" ? "cat herder" : "dog catcher");
+VM5720:5 You will be a dog catcher
+undefined
+job
+"dog catcher"
+var animal = "cat";
+// animal = "dog";
+
+animal === "cat" ? console.log("You will be a cat herder") : console.log("You will be a dog catcher");
+
+var job = (animal === "cat" ? "cat herder" : "dog catcher");
+VM5722:5 You will be a cat herder
+undefined
+job
+"cat herder"
