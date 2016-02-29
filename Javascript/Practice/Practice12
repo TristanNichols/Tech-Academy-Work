@@ -1,0 +1,119 @@
+var string1 = 'This is the longest string ever.';
+var string2 = 'This is the shortest string ever.';
+var string3 = 'Is this the thing called Mount Everest?';
+var string4 = 'This is the Sherman on the Mount.';
+
+var regex = /this/;
+
+console.log( regex.test(string1) );
+console.log( regex.test(string2) );
+console.log( regex.test(string3) );
+console.log( regex.test(string4) );
+
+VM356:9 false
+VM356:10 false
+VM356:11 true
+VM356:12 false
+undefined
+var string1 = 'This is the longest string ever.';
+var string2 = 'This is the shortest string ever.';
+var string3 = 'Is this the thing called Mount Everest?';
+var string4 = 'This is the Sherman on the Mount.';
+
+var regex = /this/i;
+
+console.log( regex.test(string1) );
+console.log( regex.test(string2) );
+console.log( regex.test(string3) );
+console.log( regex.test(string4) );
+
+VM357:9 true
+VM357:10 true
+VM357:11 true
+VM357:12 true
+undefined
+var string1 = 'This is the longest string ever.';
+var string2 = 'This is the shortest string ever.';
+var string3 = 'Is this the thing called Mount Everest?';
+var string4 = 'This is the Sherman on the Mount.';
+
+var regex = /^this/i;
+
+console.log( regex.test(string1) );
+console.log( regex.test(string2) );
+console.log( regex.test(string3) );
+console.log( regex.test(string4) );
+
+VM358:9 true
+VM358:10 true
+VM358:11 false
+VM358:12 true
+undefined
+var string1 = 'This is the longest string ever.';
+var string2 = 'This is the shortest string ever.';
+var string3 = 'Is this the thing called Mount Everest?';
+var string4 = 'This is the Sherman on the Mount.';
+
+var regex = /this$/i;
+
+console.log( regex.test(string1) );
+console.log( regex.test(string2) );
+console.log( regex.test(string3) );
+console.log( regex.test(string4) );
+
+VM359:9 false
+VM359:10 false
+VM359:11 false
+VM359:12 false
+undefined
+var string1 = 'This is the longest string ever.';
+var string2 = 'This is the shortest string ever.';
+var string3 = 'Is this the thing called Mount Everest?';
+var string4 = 'This is the Sherman on the Mount.';
+
+var regex = /this.$/i;
+
+console.log( regex.test(string1) );
+console.log( regex.test(string2) );
+console.log( regex.test(string3) );
+console.log( regex.test(string4) );
+
+VM360:9 false
+VM360:10 false
+VM360:11 false
+VM360:12 false
+undefined
+var string1 = 'This is the longest string ever.';
+var string2 = 'This is the shortest string ever.';
+var string3 = 'Is this the thing called Mount Everest?';
+var string4 = 'This is the Sherman on the Mount.';
+
+var regex = /ever.$/i;
+
+console.log( regex.test(string1) );
+console.log( regex.test(string2) );
+console.log( regex.test(string3) );
+console.log( regex.test(string4) );
+
+VM361:9 true
+VM361:10 true
+VM361:11 false
+VM361:12 false
+undefined
+var string1 = 'This is the longest string ever.';
+var string2 = 'This is the shortest string ever.';
+var string3 = 'Is this the thing called Mouna Everest?';
+var string4 = 'This is the Sherman on the Mount.';
+
+var regex = /Moun./;
+
+console.log( regex.test(string1) );
+console.log( regex.test(string2) );
+console.log( regex.test(string3) );
+console.log( regex.test(string4) );
+
+VM362:9 false
+VM362:10 false
+VM362:11 true
+VM362:12 true
+undefined
