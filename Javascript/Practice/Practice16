@@ -1,0 +1,82 @@
+var answer = window.confirm('Click OK, get true. Click cancel, get false');
+undefined
+answer
+true
+var answer = window.confirm('Click OK, get true. Click cancel, get false');
+undefined
+answer\
+VM1906:2 Uncaught SyntaxError: Unexpected token ILLEGAL(…)InjectedScript._evaluateOn @ VM46:875InjectedScript._evaluateAndWrap @ VM46:808InjectedScript.evaluate @ VM46:664
+answer\
+VM1910:2 Uncaught SyntaxError: Unexpected token ILLEGAL(…)InjectedScript._evaluateOn @ VM46:875InjectedScript._evaluateAndWrap @ VM46:808InjectedScript.evaluate @ VM46:664
+answer
+false
+var answer = window.confirm('Click OK, get true. Click cancel, get false');
+
+if (answer === true) {
+console.log('You said true!');
+}
+VM2032:5 You said true!
+undefined
+var answer = window.confirm('Click OK, get true. Click cancel, get false');
+
+if (answer === true) {
+console.log('You said true!');
+}
+undefined
+var answer = window.confirm('Click OK, get true. Click cancel, get false');
+
+if (answer === true) {
+console.log('You said true!');
+} else {
+console.log('You said something else');
+}
+VM2054:7 You said something else
+undefined
+var answer = window.confirm('Click OK, get true. Click cancel, get false');
+
+if (answer === true) {
+console.log('You said true!');
+} else {
+console.log('You said something else');
+}
+VM2055:5 You said true!
+undefined
+var answer = window.prompt('Type YES, NO, or MAYBE. Then click OK.');
+
+if (answer === 'YES') {
+console.log('You said YES!');
+} else if (answer === 'MAYBE') {
+console.log("You said maybe. I don't know what to make of that."); // note the double primes
+} else if (answer === 'NO') {
+console.log('You said no. :(');
+} else {
+console.log('You rebel, you!');
+}
+VM2665:5 You said YES!
+undefined
+var answer = window.prompt('Type YES, NO, or MAYBE. Then click OK.');
+
+if (answer === 'YES') {
+console.log('You said YES!');
+} else if (answer === 'MAYBE') {
+console.log("You said maybe. I don't know what to make of that."); // note the double primes
+} else if (answer === 'NO') {
+console.log('You said no. :(');
+} else {
+console.log('You rebel, you!');
+}
+VM2666:7 You said maybe. I don't know what to make of that.
+undefined
+var answer = window.prompt('Type YES, NO, or MAYBE. Then click OK.');
+
+if (answer === 'YES') {
+console.log('You said YES!');
+} else if (answer === 'MAYBE') {
+console.log("You said maybe. I don't know what to make of that."); // note the double primes
+} else if (answer === 'NO') {
+console.log('You said no. :(');
+} else {
+console.log('You rebel, you!');
+}
+VM2667:9 You said no. :(
+undefined
