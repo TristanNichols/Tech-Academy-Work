@@ -1,0 +1,30 @@
+for (var i = 0; i < 10; i += 1) {
+console.log(i);
+}
+VM6334:3 0
+VM6334:3 1
+VM6334:3 2
+VM6334:3 3
+VM6334:3 4
+VM6334:3 5
+VM6334:3 6
+VM6334:3 7
+VM6334:3 8
+VM6334:3 9
+undefined
+var pageNames = ["Home", "About Us", "Contact Us", "JavaScript Playground", "News", "Blog"];
+
+for (i = 0; i < pageNames.length; i += 1) {
+if (document.title == pageNames[i]) {
+console.log("We ARE here: " + pageNames[i]);
+} else {
+console.log("We are not here: " + pageNames[i]);
+}
+}
+VM6918:8 We are not here: Home
+VM6918:8 We are not here: About Us
+VM6918:8 We are not here: Contact Us
+VM6918:8 We are not here: JavaScript Playground
+VM6918:8 We are not here: News
+VM6918:8 We are not here: Blog
+undefined
