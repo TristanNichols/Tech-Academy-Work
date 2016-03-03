@@ -1,0 +1,68 @@
+for (var i = 0; i < 10; i++) {
+console.log(i + "... This will go until we hit 10");
+}
+VM1263:3 0... This will go until we hit 10
+VM1263:3 1... This will go until we hit 10
+VM1263:3 2... This will go until we hit 10
+VM1263:3 3... This will go until we hit 10
+VM1263:3 4... This will go until we hit 10
+VM1263:3 5... This will go until we hit 10
+VM1263:3 6... This will go until we hit 10
+VM1263:3 7... This will go until we hit 10
+VM1263:3 8... This will go until we hit 10
+VM1263:3 9... This will go until we hit 10
+undefined
+var i = 0;
+while (i < 10) {
+console.log(i + "... This will go until we hit 10");
+i +=1;
+}
+VM1264:4 0... This will go until we hit 10
+VM1264:4 1... This will go until we hit 10
+VM1264:4 2... This will go until we hit 10
+VM1264:4 3... This will go until we hit 10
+VM1264:4 4... This will go until we hit 10
+VM1264:4 5... This will go until we hit 10
+VM1264:4 6... This will go until we hit 10
+VM1264:4 7... This will go until we hit 10
+VM1264:4 8... This will go until we hit 10
+VM1264:4 9... This will go until we hit 10
+10
+var myArray = [true, true, true, false, true, true];
+
+var myItem = null;
+while (myItem !== false) {
+console.log("myArray has " + myArray.length + " items now. This loop will go until we pop a false.");
+myItem = myArray.pop();
+}
+VM1895:6 myArray has 6 items now. This loop will go until we pop a false.
+VM1895:6 myArray has 5 items now. This loop will go until we pop a false.
+VM1895:6 myArray has 4 items now. This loop will go until we pop a false.
+false
+counter = 1;
+while (true) {
+console.log(counter);
+counter++;
+break; // comment out this break statement to make this loop go forever and lock up your web browser
+}
+VM2392:4 1
+1
+var myArray = [true, true, true, false, true, true];
+
+var myItem = false;
+while (myItem !== false) {
+console.log("myArray has " + myArray.length + " items now. This loop will go until we pop a false.");
+myItem = myArray.pop();
+}
+undefined
+var myArray = [true, true, true, false, true, true];
+
+var myItem = false;
+do {
+console.log("myArray has " + myArray.length + " items now. This loop will go until we pop a false.");
+myItem = myArray.pop();
+} while (myItem !== false);
+VM3075:6 myArray has 6 items now. This loop will go until we pop a false.
+VM3075:6 myArray has 5 items now. This loop will go until we pop a false.
+VM3075:6 myArray has 4 items now. This loop will go until we pop a false.
+false
