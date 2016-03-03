@@ -1,0 +1,51 @@
+console.log("Arf");
+console.log("Woof");
+console.log("Meow");
+console.log("Mooooooooooo");
+
+VM3149:2 Arf
+VM3149:3 Woof
+VM3149:4 Meow
+VM3149:5 Mooooooooooo
+undefined
+console.log("Arf");
+console.log("Woof");
+console.log("Meow");
+console.log("Mooooooooooo");
+
+VM3150:2 Arf
+VM3150:3 Woof
+VM3150:4 Meow
+VM3150:5 Mooooooooooo
+undefined
+function speak() {
+console.log("Arf");
+console.log("Woof");
+console.log("Meow");
+console.log("Mooooooooooo");
+}
+undefined
+speak();
+VM3155:3 Arf
+VM3155:4 Woof
+VM3155:5 Meow
+VM3155:6 Mooooooooooo
+undefined
+speak();
+VM3155:3 Arf
+VM3155:4 Woof
+VM3155:5 Meow
+VM3155:6 Mooooooooooo
+undefined
+speak();
+VM3155:3 Arf
+VM3155:4 Woof
+VM3155:5 Meow
+VM3155:6 Mooooooooooo
+undefined
+speak();
+VM3155:3 Arf
+VM3155:4 Woof
+VM3155:5 Meow
+VM3155:6 Mooooooooooo
+undefined
