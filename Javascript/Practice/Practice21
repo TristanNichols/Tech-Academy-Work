@@ -1,0 +1,31 @@
+var pageNames = ["Home", "About Us", "Contact Us", "Javascript Playground", "News", "Blog"];
+
+for (var p in pageNames) {
+console.log(p + " is " + pageNames[p]);
+}
+VM776:5 0 is Home
+VM776:5 1 is About Us
+VM776:5 2 is Contact Us
+VM776:5 3 is Javascript Playground
+VM776:5 4 is News
+VM776:5 5 is Blog
+undefined
+var pages = {
+"first" : "Home",
+"second" : "About Us",
+"third" : "Contact Us",
+"fourth" : "JavaScript Playground",
+"fifth" : "Blog",
+};
+
+for (var p in pages) {
+if (pages.hasOwnProperty(p)) {
+console.log(p + " is " + pages[p]);
+}
+}
+VM1045:12 first is Home
+VM1045:12 second is About Us
+VM1045:12 third is Contact Us
+VM1045:12 fourth is JavaScript Playground
+VM1045:12 fifth is Blog
+undefined
