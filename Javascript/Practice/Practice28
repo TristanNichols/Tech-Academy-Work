@@ -1,0 +1,39 @@
+var myNum = 32;
+var myResult = "Success!";
+
+function randomizer(limit) {
+
+var myNum = Math.floor(Math.random() * limit);
+
+console.log("myNum is " + myNum);
+console.log("Global myNum is " + window.myNum);
+
+return myNum;
+}
+undefined
+myNum
+32
+myResult
+"Success!"
+randomizer(10)
+VM7910:9 myNum is 4
+VM7910:10 Global myNum is 32
+4
+myNum
+32
+function randomizer(limit) {
+
+myNum = Math.floor(Math.random() * limit);
+
+console.log("myNum is " + myNum);
+console.log("Global myNum is " + window.myNum);
+
+return myNum;
+}
+undefined
+randomizer(10)
+VM8059:6 myNum is 1
+VM8059:7 Global myNum is 1
+1
+myNum
+1
