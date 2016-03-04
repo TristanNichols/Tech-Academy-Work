@@ -1,0 +1,8 @@
+var speakSomething = function(what) {
+for (var i = 0; i < 10: i += 1) {
+console.log(what);
+}
+}
+
+window.setTimeout(speakSomething, 5000);
+//This code worked for the tutorial instructor, but not for me, I'll have to come back to this eventually
