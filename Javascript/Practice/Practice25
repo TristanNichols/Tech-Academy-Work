@@ -1,0 +1,58 @@
+function speakSomething(what, howMany) {
+var what = (typeof what !== "undefined") ? what : "Default speech";
+var howMany = (typeof howMany !== "undefined") ? howMany : 10;
+
+for (var i = 0; i < howMany; i += 1) {
+console.log(what + " (" + i + ")");
+}
+}
+undefined
+function addingMachine() {
+var total = 0;
+
+for (var i = 0; i < arguments.length; i += 1) {
+var number = arguments[i];
+
+if (typeof number === "number") {
+total += number;
+}
+}
+
+return total;
+}
+undefined
+speakSomething("Hey hey", 5);
+VM4256:7 Hey hey (0)
+VM4256:7 Hey hey (1)
+VM4256:7 Hey hey (2)
+VM4256:7 Hey hey (3)
+VM4256:7 Hey hey (4)
+undefined
+speakSomething("Hey hey");
+VM4256:7 Hey hey (0)
+VM4256:7 Hey hey (1)
+VM4256:7 Hey hey (2)
+VM4256:7 Hey hey (3)
+VM4256:7 Hey hey (4)
+VM4256:7 Hey hey (5)
+VM4256:7 Hey hey (6)
+VM4256:7 Hey hey (7)
+VM4256:7 Hey hey (8)
+VM4256:7 Hey hey (9)
+undefined
+speakSomething();
+VM4256:7 Default speech (0)
+VM4256:7 Default speech (1)
+VM4256:7 Default speech (2)
+VM4256:7 Default speech (3)
+VM4256:7 Default speech (4)
+VM4256:7 Default speech (5)
+VM4256:7 Default speech (6)
+VM4256:7 Default speech (7)
+VM4256:7 Default speech (8)
+VM4256:7 Default speech (9)
+undefined
+addingMachine(1,2,3)
+6
+addingMachine(1,2,3,4,5,6,7,8,9,9,1204910249014);
+1204910249068
