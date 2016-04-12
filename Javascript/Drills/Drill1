@@ -1,0 +1,47 @@
+The HTML:
+
+<html>
+
+<head>
+	<title> Just a Webpage </title>
+<head>
+
+<body>
+<div id="container">
+  <a class="mainNav" href="#" id="mainLink" onmouseover="rolloverMenu(1, 'mainMenu');" onmouseout="rolloverMenu(0, 'mainMenu');">Rollover Me</a>
+  <div class="rolloverMenu" id="mainMenu" style="display: none;" onmouseover="rolloverMenu(1, 'mainMenu');" onmouseout="rolloverMenu(0, 'mainMenu');">
+    <a href="#">Doge</a><br />
+    <a href="#">Doge</a><br />
+    <a href="#">Doge</a><br />
+    <a href="#">Doge</a>
+  </div>
+</div>
+	<marquee>Such Page</marquee>
+	<h1> Many Doge </h1>
+	<p> Much HTML </p>
+	<marquee scrolldelay=500>Wew</marquee>
+	<img src="https://pbs.twimg.com/profile_images/417201275466690560/TzVjIXv2.jpeg"></img>
+<script type='text/javascript' src='C:/Program Files (x86)/Notepad++/Test Page.js'></script>
+</body>
+
+<html>
+
+The JavaScript:
+
+function rolloverMenu(showHide, menu)
+{
+	var linkObj = document.getElementById('mainLink');
+	var menuObj = document.getElementById(menu);
+	if (showHide == 0)
+	{
+		menuObj.style.display = 'none';
+		linkObj.setAttribute('class', 'mainNav');
+		linkObj.setAttribute('className', 'mainNav');
+	}
+	else
+	{
+		menuObj.style.display = 'block';
+		linkObj.setAttribute('class', 'selectedRollover');
+		linkObj.setAttribute('className', 'selectedRollover');
+	}
+}
