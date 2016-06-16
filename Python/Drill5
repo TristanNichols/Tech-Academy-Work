@@ -1,0 +1,13 @@
+programmer_list = ["Tim Berners-Lee", "Guido van Rossum", "Linus Torvalds", "Larry Page", "Sergery Brin",]
+print "Programmer: " + (programmer_list[0])
+print "Programmer: " + (programmer_list[1])
+print "Programmer: " + (programmer_list[2])
+print "Programmer: " + (programmer_list[3])
+print "Programmer: " + (programmer_list[4])
+for programmer in programmer_list:
+    print "Programmer: " + programmer
+number_list = [1,2,3,4,5]
+emptyNumberList = []
+for x in number_list:
+    emptyNumberList.append(x**2)
+print emptyNumberList
