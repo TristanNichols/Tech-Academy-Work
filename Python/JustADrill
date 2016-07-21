@@ -1,0 +1,75 @@
+#Assigning an integer to a variable
+x = 5
+
+#Assigning a string to a variable
+x = 'Five'
+
+#Assigning a float to a variable
+x = 5.98
+
+#Using the print function and .format() notation to print out the variable I assigned
+sub = "cheese"
+a = "string {0}".format(sub)
+print a
+
+#Use each of these operators +,-,*,/,+=,=,%
+k = 5 + 5 - 5 * 5 / 5
+k = 5
+o = 0
+k += o
+x = 6 % 6
+
+#Use logical operators and, or, not
+x = raw_input("What's your favorite number?")
+
+if x > 0 and x < 9:
+    print "Good, you kept it in the single digits... 9 is reserved for Tech, sorry! (if that's what you chose, try again :/)"
+elif x == 25 or x == 777:
+    print "why..."
+elif not x == 746584763:
+    print "Your favorite number is 746584763"
+else:
+    print "Wrong... try again..."
+
+#Use conditional statements: if, elif, else
+#Just did, look uuuup
+
+#Use a while loop
+count = 0
+while count < 5:
+    print count, " is less than 5"
+    count = count + 1
+else:
+    print count, " is not less than 5"
+
+#Use a for loop
+for letter in 'Python':
+    print 'Current Letter :', letter
+
+fruits = ['banana', 'apple', 'mango']
+for fruit in fruits:
+    print 'Current fruit :', fruit
+
+#Create a list and iterate through that list using a for loop to print each item out on a new line
+list1 = [0, 1, 2, 3, 4]
+for x in list1:
+    print "%d time" % (x) # %d is digit, %f is float, %s is string, % is the Modulus operator, it gives the remainder of something
+
+#Create a tuple and iterate through it using a for loop to print each item out on a new line
+tuple1 = (0, 1, 2, 3, 4)
+for x in tuple1:
+    print "%d time (again)" % (x)
+
+#Define a function that returns a string variable
+def aFunction():
+    text = raw_input("1 or 2?")
+    if text:
+        print "1"
+    else:
+        print "2"
+    return text
+aFunction = aFunction()
+print "uuuuh " + aFunction
+
+#Call the function you defined above and print the result to the shell
+print aFunction
