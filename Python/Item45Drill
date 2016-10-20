@@ -1,0 +1,18 @@
+def bubbleSort(alist):
+    for passnum in range(len(alist)-1,0,-1):
+        for i in range(passnum):
+            if alist[i]>alist[i+1]:
+                temp = alist[i]
+                alist[i] = alist[i+1]
+                alist[i+1] = temp
+                
+# Usage example
+>>> alist = [67, 45, 2, 13, 1, 998]
+>>> bubbleSort(alist)
+>>> print(alist)
+[1, 2, 13, 45, 67, 998]
+>>> alist = [89, 23, 33, 45, 10, 12, 45, 45, 45]
+>>> bubbleSort(alist)
+>>> print(alist)
+[10, 12, 23, 33, 45, 45, 45, 45, 89]
+>>>
