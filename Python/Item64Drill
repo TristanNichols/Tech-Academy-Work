@@ -1,0 +1,17 @@
+import os
+import shutil
+import datetime as dt
+
+now = dt.datetime.now()
+ago = now - dt.timedelta(hours = 24)
+sender = ('C:/Users/Student/Desktop/Test/a')
+receiver = ('C:/Users/Student/Desktop/Test/b')
+os.chdir(sender)
+
+for root, dirs, files in os.walk('C:/Users/Student/Desktop/Test/a'):
+    for fname in files:
+        path = os.path.join(root, fname)
+        st = os.stat(path)
+        mtime = dt.datetime.fromtimestamp(st.st_mtime)
+        if mtime > ago:
+            shutil.copy2(path, receiver)
