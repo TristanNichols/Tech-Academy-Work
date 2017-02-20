@@ -1,0 +1,17 @@
+import datetime
+import pytz
+
+now = datetime.datetime.now(tz = pytz.UTC)
+
+London = now.astimezone(pytz.timezone('Europe/London'))
+NYC = now.astimezone(pytz.timezone('EST'))
+
+if (NYC.hour > 9 and NYC.hour < 21):
+    print('NYC branch is open.')
+else:
+    print('NYC branch is closed.')
+
+if (London.hour > 9 and London.hour < 21):
+    print('London branch is open.')
+else:
+    print('London branch is closed.')
