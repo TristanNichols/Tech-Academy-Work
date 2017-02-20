@@ -1,0 +1,11 @@
+import shutil
+import os
+
+os.chdir('C:/Users/Student/Desktop/Test/a')
+paths = os.listdir('C:/Users/Student/Desktop/Test/a')
+
+for x in paths:
+    shutil.copy2(x, 'C:/Users/Student/Desktop/Test/b')
+
+print (paths)
+
