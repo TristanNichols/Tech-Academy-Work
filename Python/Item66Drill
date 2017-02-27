@@ -1,0 +1,62 @@
+import tkinter
+from tkinter import *
+from tkinter import ttk
+from tkinter import filedialog
+from tkinter import messagebox
+root = Tk()
+
+import os
+import shutil
+import datetime as dt
+import time
+import sqlite3
+
+conn = sqlite3.connect('fileTransfer.db')
+c = conn.cursor()
+
+c.execute('CREATE TABLE IF NOT EXISTS timeElapsed(time REAL)')
+c.execute('INSERT INTO timeElapsed VALUES (5)')
+    
+varD = StringVar()
+varC = StringVar()
+today = StringVar()
+
+def askDestination():
+    desName = filedialog.askdirectory()
+    if desName:
+        varD.set(desName)
+
+def askDestination2():
+    desName = filedialog.askdirectory()
+    if desName:
+        varC.set(desName)
+
+chooseSender = ttk.Button(text = 'Choose Sender', command = askDestination).grid(row = 1, column = 2, padx = 5, pady = 5)
+chooseReceiver = ttk.Button(text = 'Choose Receiver', command = askDestination2).grid(row = 2, column = 2, padx = 5, pady = 5)
+
+starter = StringVar()
+starter = time.time()
+
+e = ttk.Entry(text = varD).grid(row = 1, column = 1, padx = 1, pady = 1)
+e = ttk.Entry(text = varC).grid(row = 2, column = 1, padx = 1, pady = 1)
+
+def pressed():
+    c.execute('INSERT INTO timeElapsed VALUES({})'.format(starter))
+    conn.commit()
+    now = dt.datetime.now()
+    ago = now - dt.timedelta(hours = 24)
+    sender = varD.get()
+    receiver = varC.get()
+    for root, dirs, files in os.walk(sender):
+        for fname in files:
+            path = os.path.join(sender, fname)
+            st = os.stat(path)
+            mtime = dt.datetime.fromtimestamp(st.st_mtime)
+            if mtime > ago:
+                shutil.copy2(path, receiver)
+
+copyButton = ttk.Button(root, text = 'Copy', command = pressed).grid(row = 3, column = 1, padx = 5, pady = 5)
+c.execute('SELECT time FROM timeElapsed ORDER by time DESC')
+theTime = c.fetchone()[0]
+fTime = time.ctime(theTime)
+e = ttk.Label(text = fTime).grid(row = 4, column = 1, columnspan = 2, padx = 1, pady = 1)
